@@ -29,9 +29,7 @@ warnings.filterwarnings('ignore')
 
 
 
-import re
-import string
-from bs4 import BeautifulSoup
+
 
 
 
@@ -94,38 +92,38 @@ data['y'].value_counts()
 
        #visualizing the only categorical column present in the dataset.
 values = data['y'].value_counts()
-plt.figure(figsize=(7,7))
-values.plot(kind='pie',fontsize=17, autopct='%.2f')
-plt.legend(loc="best")
-plt.show()
+#plt.figure(figsize=(7,7))
+#values.plot(kind='pie',fontsize=17, autopct='%.2f')
+#plt.legend(loc="best")
+#plt.show()
        #it means all the categorical values in our dataset contains the equal amoung of balance.
 
 
        # plot these features in the same graph with stack plot
-fig, axs = plt.subplots(5, sharex=True, sharey=True)
-fig.set_size_inches(18, 24)
-labels = ["X15","X30","X45","X60","X75"]
-colors = ["r","g","b",'y',"k"]
-fig.suptitle('Visual representation of different channels when stacked independently', fontsize = 20)
+#fig, axs = plt.subplots(5, sharex=True, sharey=True)
+#fig.set_size_inches(18, 24)
+#labels = ["X15","X30","X45","X60","X75"]
+#colors = ["r","g","b",'y',"k"]
+#fig.suptitle('Visual representation of different channels when stacked independently', fontsize = 20)
        # loop over axes
-for i,ax in enumerate(axs):
-          axs[i].plot(data.iloc[:,0],data[labels[i]],color=colors[i],label=labels[i])
-          axs[i].legend(loc="upper right")
+#for i,ax in enumerate(axs):
+ #         axs[i].plot(data.iloc[:,0],data[labels[i]],color=colors[i],label=labels[i])
+  #        axs[i].legend(loc="upper right")
 
-          plt.xlabel('total number of observation', fontsize = 20)
-          plt.show()
+   #       plt.xlabel('total number of observation', fontsize = 20)
+    #      plt.show()
 
 
 
 #plt.figure(figsize=(10,10))
 #this can help of provide us the general idea of how the waves are behaving 
 #fig, axs = plt.subplots(1, sharex=True, sharey=True)
-          plt.rcParams["figure.figsize"] = (20, 10)
-          data.loc[:,::25].plot()
-          plt.title("Visual representation different channels when stacked aganist each other")
-          plt.xlabel("total number of values of x")
-          plt.ylabel("range of values of y")
-          plt.show()
+     #     plt.rcParams["figure.figsize"] = (20, 10)
+      #    data.loc[:,::25].plot()
+       #   plt.title("Visual representation different channels when stacked aganist each other")
+        #  plt.xlabel("total number of values of x")
+         # plt.ylabel("range of values of y")
+          #plt.show()
 
 
 
