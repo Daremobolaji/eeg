@@ -12,7 +12,6 @@ from sklearn import svm
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import roc_auc_score , accuracy_score , precision_score, recall_score ,confusion_matrix
 from sklearn.linear_model import LogisticRegression
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from numpy import genfromtxt
 from mpl_toolkits.mplot3d import Axes3D
