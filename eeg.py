@@ -7,7 +7,6 @@ import warnings
 import statistics
 import numpy as np
 import pandas as pd
-import seaborn as sns
 from collections import Counter
 from sklearn import svm
 from sklearn.model_selection import GridSearchCV
