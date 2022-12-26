@@ -66,7 +66,7 @@ with st.form("analyze",clear_on_submit=False):
 
 #data_sr=st.select_slider("Select Data Source", ["Load Data Automatically", "Upload Data from PC"])
 
-data=pd.read_csv("C:/dat/EEG DATA/seizure recognition/Epileptic Seizure Recognition.csv")
+data=pd.read_csv("Epileptic Seizure Recognition.csv")
 #st.dataframe(load)
 
 #if data_sr=="Load Data Automatically" :
